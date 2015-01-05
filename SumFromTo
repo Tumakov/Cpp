@@ -1,0 +1,26 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main(){
+	setlocale(0, "");
+	int i,n;
+	int sum = 0;
+	cout << "Сумма чисел от ";
+	cin >> i;
+	cout << "до ";
+	cin >> n;
+	if (i<n){	
+		for (i; i<=n; i++){
+			sum = sum + i;
+		}
+	}
+	else {
+		for (n; n<=i; n++){
+			sum = sum + n;
+		}
+	}
+	cout << "Их сумма " << sum << endl;
+	getch();
+	return 0;
+}
