@@ -19,10 +19,9 @@ int main(){
   char readWord[64];
   //заводим счетчик слов
   int wordCounter = 0;
-  int test = 0;
 
   //бесконечный цикл
-while(true){
+  while(true){
     //читаем слово в буфер
     inputFile >> readWord;
     //если прочитали конец файла, выходим из цикла
