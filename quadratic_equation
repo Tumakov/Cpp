@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+#include <conio.h>
+
+using namespace std;
+
+int main(){
+	int a, b, c;
+	float x,z;
+	cin >> a >> b >> c;
+	x = pow(b,2)+(-4*a*c);
+	x = sqrt(x);
+	z = (-b+x)/2;
+	x = (-b-x)/2;
+	cout << z << endl;
+	cout << x << endl;
+	getch();
+	return 0;
+}
