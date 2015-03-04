@@ -7,8 +7,8 @@ using namespace std;
 void secondDegree(int a, int b, int c){
 	float x,z;
 	x = sqrt(b*b-4*a*c);
-	z = (-b+x)/2;
-	x = (-b-x)/2;
+	z = (-b+x)/(2*a);
+	x = (-b-x)/(2*a);
 	cout << "root one = " << z << endl;
 	cout << "root two = " << x << endl;
 }
