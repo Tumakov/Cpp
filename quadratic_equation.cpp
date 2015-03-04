@@ -4,30 +4,30 @@
 
 using namespace std;
 
-int seconddegree(int a, int b, int c){
+void secondDegree(int a, int b, int c){
 	float x,z;
-	x = sqrt(pow(b,2)+(-4*a*c));
+	x = sqrt(b*b-4*a*c);
 	z = (-b+x)/2;
 	x = (-b-x)/2;
 	cout << z << endl;
 	cout << x << endl;
 }
 
-int firstdegree(int b, int c){
+void firstDegree(int b, int c){
 	float x;
 	x = -c / b;
 	cout << x << endl;
 }
 
+void zeroDegree(){
+	cout << "There is no equation at all" << endl;
+
 int main(){
 	int a, b, c;
 	cin >> a >> b >> c;
-	if (!a==0){
-		seconddegree(a, b, c);
-	}
-	else {
-	firstdegree(b, c);
-	}
+	if (!a==0) secondDegree(a, b, c);
+	else if (!b==0) firstDegree(b, c);
+	else zeroDegree();
 	getch();
 	return 0;
 }
