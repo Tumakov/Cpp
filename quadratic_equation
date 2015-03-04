@@ -4,16 +4,30 @@
 
 using namespace std;
 
-int main(){
-	int a, b, c;
+int seconddegree(int a, int b, int c){
 	float x,z;
-	cin >> a >> b >> c;
-	x = pow(b,2)+(-4*a*c);
-	x = sqrt(x);
+	x = sqrt(pow(b,2)+(-4*a*c));
 	z = (-b+x)/2;
 	x = (-b-x)/2;
 	cout << z << endl;
 	cout << x << endl;
+}
+
+int firstdegree(int b, int c){
+	float x;
+	x = -c / b;
+	cout << x << endl;
+}
+
+int main(){
+	int a, b, c;
+	cin >> a >> b >> c;
+	if (!a==0){
+		seconddegree(a, b, c);
+	}
+	else {
+	firstdegree(b, c);
+	}
 	getch();
 	return 0;
 }
