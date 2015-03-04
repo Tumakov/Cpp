@@ -21,6 +21,7 @@ void firstDegree(int b, int c){
 
 void zeroDegree(){
 	cout << "There is no equation at all" << endl;
+}
 
 int main(){
 	int a, b, c;
