@@ -9,14 +9,14 @@ void secondDegree(int a, int b, int c){
 	x = sqrt(b*b-4*a*c);
 	z = (-b+x)/2;
 	x = (-b-x)/2;
-	cout << "x one = " << z << endl;
-	cout << "x two = " << x << endl;
+	cout << "root one = " << z << endl;
+	cout << "root two = " << x << endl;
 }
 
 void firstDegree(int b, int c){
 	float x;
 	x = -c / b;
-	cout << "the only x = " << x << endl;
+	cout << "the only root = " << x << endl;
 }
 
 void zeroDegree(){
@@ -25,6 +25,7 @@ void zeroDegree(){
 
 int main(){
 	int a, b, c;
+	cout << "Enter the coefficients of the equation" << endl;
 	cin >> a >> b >> c;
 	if (!a==0) secondDegree(a, b, c);
 	else if (!b==0) firstDegree(b, c);
