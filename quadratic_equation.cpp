@@ -9,14 +9,14 @@ void secondDegree(int a, int b, int c){
 	x = sqrt(b*b-4*a*c);
 	z = (-b+x)/2;
 	x = (-b-x)/2;
-	cout << z << endl;
-	cout << x << endl;
+	cout << "x one = " << z << endl;
+	cout << "x two = " << x << endl;
 }
 
 void firstDegree(int b, int c){
 	float x;
 	x = -c / b;
-	cout << x << endl;
+	cout << "the only x = " << x << endl;
 }
 
 void zeroDegree(){
